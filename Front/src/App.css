@@ -1,0 +1,61 @@
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+table{
+    border: 1px solid ;
+    padding: 10px;
+    color: #fff;
+}
+tr{
+    border: 1px solid yellow;
+    margin: 5px;
+}
+thead{
+    margin-bottom: 20px;
+}
+thead td{
+    font-size: 30px;
+    border: 1px solid ;
+    padding: 5px;
+    margin-right: 20px !important;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
+}
+td{
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+    border: 1px solid;
+    /* margin: 10px; */
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    max-width: fit-content;
+}
+.action{
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.action span{
+    cursor: pointer;
+}
+.action span:first-child{
+    color: orange;
+    -webkit-text-stroke:1px red ;
+}
+.action span:nth-child(2){
+    color: blueviolet;
+    -webkit-text-stroke:1px rgb(235, 235, 142) ;
+}
+.name, .email{
+    text-align: left;
+}

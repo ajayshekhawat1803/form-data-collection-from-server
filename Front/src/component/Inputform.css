@@ -1,0 +1,40 @@
+#container{
+    /* width: 35vw; */
+    /* height: 300px; */
+    background-color: rgb(227, 202, 202);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+}
+.inp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.inp label{
+    font-weight: 700;
+    width: 25%;
+}
+.inp input{
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    /* text-align: center; */
+}
+.gender-box{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    padding-left:0 ;
+}
+.btn{
+    background-color: rgb(87, 87, 193);
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+}

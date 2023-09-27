@@ -1,0 +1,52 @@
+.delete-box{
+    background-color: #f7d9d9;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 80%;
+    left: 50%;
+    padding: 10px ;
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+    z-index: 999;
+}
+.delete-box h1{
+    font-size: 1.2rem;
+}
+.delete-box button{
+    bottom: 0;
+    min-width: fit-content;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: rgb(87, 87, 193);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+ button:hover{
+    background: rgb(98, 98, 204);
+}
+.box{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items:center; 
+    text-align: center;
+}
+
+
+#cancelBtn{
+    width: 30px;
+    float: right ;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
