@@ -10,7 +10,7 @@ const InputForm = () => {
   const [show, setShow] = useState(false)
 
   const sendData = ()=>{
-    axios.post("http://localhost:4000/new",{
+    axios.post("http://localhost:4000/users/new",{
       name : name,
       email : email, 
       number : number

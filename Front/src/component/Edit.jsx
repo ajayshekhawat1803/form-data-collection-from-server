@@ -11,7 +11,7 @@ const Edit = (props) => {
     const [number, setNumber] = useState(props.number)
 
     const changeData = async () => {
-        let res = await axios.put(`http://localhost:4000/change/${id}`, {
+        let res = await axios.put(`http://localhost:4000/users/change/${id}`, {
            name: name,
            email : email,
            number : number

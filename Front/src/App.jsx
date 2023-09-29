@@ -18,16 +18,16 @@ const App = () => {
   // const [idtoDelete, setidtoDelete] = useState("")
   // let idtoDelete;
   const getData = async () => {
-    let res = await axios.get("http://localhost:4000")
+    let res = await axios.get("http://localhost:4000/users")
       .then((result) => {
         setData(result.data)
       })
   }
   const deleteData = async (idtoDelete) => {
-    let res = await axios.delete(`http://localhost:4000/del/${idtoDelete}`)
-    // console.log(`http://localhost:4000/del/${idtoDelete}`);
+    console.log(`http://localhost:4000/del/${idtoDelete}`);
+    let res = await axios.delete(`http://localhost:4000/users/del/${idtoDelete}`)
   }
-  
+  // getData()
 
   useEffect(() => {
     getData()
@@ -43,7 +43,7 @@ const App = () => {
           <table>
             <thead>
               <tr>
-                <td>ID</td>
+                {/* <td>ID</td> */}
                 <td>Name</td>
                 <td>Email</td>
                 <td>Mobile</td>
@@ -54,20 +54,21 @@ const App = () => {
               {
                 data.map((curr) => {
                   return (
-                    <tr key={curr.id}>
-                      <td>{curr.id}</td>
+                    <tr key={curr._id}>
+                      {/* <td>{curr.id}</td> */}
                       <td className='name'>{curr.name}</td>
                       <td className='email'>{curr.email}</td>
                       <td>{curr.number}</td>
                       <td className='action'>
                         <span onClick={
                           () => {
-                            deleteData(curr.id);
+                            // console.log(curr._id);
+                            deleteData(curr._id);
                             setDeleted(true)
                           }}>Delete </span>
                         <span onClick={
                           () => {
-                            setEditID(curr.id)
+                            setEditID(curr._id)
                             setEditName(curr.name)
                             setEditEmail(curr.email)
                             setEditNumber(curr.number)
