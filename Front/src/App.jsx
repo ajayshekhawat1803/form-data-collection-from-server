@@ -18,9 +18,10 @@ const App = () => {
   // const [idtoDelete, setidtoDelete] = useState("")
   // let idtoDelete;
   const getData = async () => {
-    let res = await axios.get("http://localhost:4000/users")
+    let res = await axios.get("http://localhost:4000/users/")
       .then((result) => {
-        setData(result.data)
+        // setData(result.data)
+        console.log(result);
       })
   }
   const deleteData = async (idtoDelete) => {

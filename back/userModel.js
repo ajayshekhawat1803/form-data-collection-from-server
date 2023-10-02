@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const userSchema = new mongoose.Schema({
+const employeeSchema = new mongoose.Schema({
     // id: {
     //     type: Number,
     //     required: true
@@ -18,5 +18,5 @@ const userSchema = new mongoose.Schema({
     },
 })
 
-const userModel = mongoose.model("userModel",userSchema)
-export default userModel
+const employeeModel = mongoose.model("employee",employeeSchema)
+export default employeeModel

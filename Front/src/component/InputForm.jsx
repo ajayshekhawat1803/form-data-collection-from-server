@@ -7,6 +7,7 @@ const InputForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [number, setNumber] = useState("")
+  const [img, setimg] = useState(null)
   const [show, setShow] = useState(false)
 
   const sendData = ()=>{
@@ -45,6 +46,12 @@ const InputForm = () => {
             setNumber(e.target.value)
           }} />
       </div>
+      
+      <div className='inp'>
+        <label htmlFor='number'>Profile Picture:</label>
+        <input id='img' type='file' onChange={(e)=>setimg(e.target.files[0])}/>
+      </div>
+
       <div className='inp'>
         <input type='submit' id='submit' className='btn' />
         <input type='reset' id='reset' className='btn' />
